@@ -47,8 +47,7 @@ nav {
 #div-cardapio {
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   height: 100vh;
   padding: 20px;
 }
@@ -59,17 +58,53 @@ nav {
   align-items: center;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+
+.tab-link {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  margin-right: 10px;
+}
+
+.tab-link.active {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.tab-content.active {
+  display: block;
+  text-align: center;
+  max-height: 1000px;
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   #img-logo {
       width: 150px;
   }
 
   #h1-inicio {
-      font-size: 28px;
+      font-size: 24px;
   }
 
   #p-inicio {
-      font-size: 16px;
+      font-size: 14px;
+  }
+
+  .tab-link {
+    padding: 5px 10px;
   }
 }
 
@@ -85,5 +120,9 @@ nav {
   #p-inicio {
       font-size: 11px;
       margin-top: 20px;
+  }
+
+  .tab-link {
+    padding: 5px 10px;
   }
 }
