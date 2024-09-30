@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  background: radial-gradient(circle, red, #ff7e5f);
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -43,21 +43,34 @@ nav {
   color: white;
   font-size: 32px;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 1px black;
 }
 
 #p-inicio {
   color: white;
   font-size: 18px;
   margin-top: 20px;
+  text-shadow: 2px 2px 1px black;
 }
 
 #div-cardapio {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardapio {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cardapio:hover {
+  background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -70,19 +83,25 @@ nav {
 .tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 300px;
+  margin-bottom: 50px;
 }
 
 .tab-link {
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: white;
+  border-radius: 10px;
   border: none;
   margin-right: 10px;
 }
 
+.tab-link:hover {
+  background-color: #f0f0f0;
+}
+
 .tab-link.active {
-  background-color: #ddd;
+  background-color: rgb(255, 49, 49);
+  color: white;
 }
 
 .tab-content {
