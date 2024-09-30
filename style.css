@@ -69,6 +69,10 @@ nav {
   padding: 20px;
 }
 
+.descricao {
+  font-size: 14px;
+}
+
 .cardapio:hover {
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -114,7 +118,7 @@ nav {
 .tab-content.active {
   display: block;
   text-align: center;
-  max-height: 1000px;
+  max-height: 100%;
   opacity: 1;
   transition: all 1.5s ease;
 }
@@ -135,6 +139,14 @@ nav {
   .tab-link {
     padding: 5px 10px;
   }
+
+  .descricao {
+    font-size: 12px;
+  }
+  
+  .mb {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -153,5 +165,9 @@ nav {
 
   .tab-link {
     padding: 5px 10px;
+  }
+
+  .descricao {
+    font-size: 8px;
   }
 }
