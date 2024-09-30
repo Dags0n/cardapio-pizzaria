@@ -8,6 +8,7 @@ body {
 nav {
   background: radial-gradient(circle, #ff7e5f, #feb47b);
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #div-center {
@@ -21,13 +22,17 @@ nav {
 }
 
 #div-inicio {
-  background-color: white;
+  background-image: url('assets/background-pizza.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 45vh;
   padding: 20px;
   margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #img-logo {
@@ -35,11 +40,13 @@ nav {
 }
 
 #h1-inicio {
+  color: white;
   font-size: 32px;
   margin-bottom: 10px;
 }
 
 #p-inicio {
+  color: white;
   font-size: 18px;
   margin-top: 20px;
 }
@@ -50,6 +57,8 @@ nav {
   flex-direction: column;
   height: 100vh;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .center {
@@ -88,6 +97,7 @@ nav {
   text-align: center;
   max-height: 1000px;
   opacity: 1;
+  transition: all 1.5s ease;
 }
 
 @media (max-width: 768px) {
